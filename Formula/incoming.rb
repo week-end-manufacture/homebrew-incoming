@@ -8,7 +8,7 @@ class Incoming < Formula
     version "b0.0.1"
     license "MIT"
   
-    depends_on "python@3.y"
+    depends_on "python@3.9"
 
     def install
         virtualenv_install_with_resources
