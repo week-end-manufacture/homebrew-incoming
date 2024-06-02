@@ -11,9 +11,6 @@ class Incoming < Formula
     depends_on "python@3.y"
 
     def install
-        venv = virtualenv_create(libexec, "python3.y")
-        venv.pip_install "./requirements.txt"
-
-
+        virtualenv_install_with_resources
     end
   end
