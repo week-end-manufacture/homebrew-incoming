@@ -8,8 +8,10 @@ class Incoming < Formula
     version "beta0.0.1"
     license "MIT"
   
-    depends_on "python@3.12"
+    depends_on "python@3.9"
     depends_on "pkg-config"
+    depends_on "libjpeg"
+    depends_on "libpng"
 
     resource "setuptools" do
         url "https://files.pythonhosted.org/packages/d6/4f/b10f707e14ef7de524fe1f8988a294fb262a29c9b5b12275c7e188864aed/setuptools-69.5.1.tar.gz"
