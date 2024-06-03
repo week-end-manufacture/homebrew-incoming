@@ -73,6 +73,11 @@ class Incoming < Formula
         sha256 "c7f5bef7f47723c53420e377bc64d2553843bee8bcac5f0ad076ab1524780018"
     end
 
+    resource "pycryptodomex" do
+        url "https://files.pythonhosted.org/packages/31/a4/b03a16637574312c1b54c55aedeed8a4cb7d101d44058d46a0e5706c63e1/pycryptodomex-3.20.0.tar.gz"
+        sha256 "7a710b79baddd65b806402e14766c721aee8fb83381769c27920f26476276c1e"
+    end
+
     resource "pyppmd" do
         url "https://files.pythonhosted.org/packages/39/c8/9039c7503577de08a3f4c81e7619583efdc16030da6d1a25268d3dca49c8/pyppmd-1.1.0.tar.gz"
         sha256 "1d38ce2e4b7eb84b53bc8a52380b94f66ba6c39328b8800b30c2b5bf31693973"
