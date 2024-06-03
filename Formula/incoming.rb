@@ -55,8 +55,13 @@ class Incoming < Formula
         sha256 "6be126e3225486dff286a8fb9a06246a5253f4c7c53b475ea5f5ac934e64194c"
     end
 
-    resource "pybcj" do
+    resource "py7zr" do
         url "https://files.pythonhosted.org/packages/fa/5c/44db15249a140e62589ea5c3980fba9988a8d73297575255f3a28dfc3ad4/py7zr-0.21.0.tar.gz"
+        sha256 "213a9cc46940fb8f63b4163643a8f5b36bbc798134746c3992d3bc6b14edab87"
+    end
+
+    resource "pybcj" do
+        url "https://files.pythonhosted.org/packages/37/d2/22e808b9d25ce3b43f5c8a9e22d873d403485ba55d84a4d6d5d044881762/pybcj-1.0.2.tar.gz"
         sha256 "c7f5bef7f47723c53420e377bc64d2553843bee8bcac5f0ad076ab1524780018"
     end
 
