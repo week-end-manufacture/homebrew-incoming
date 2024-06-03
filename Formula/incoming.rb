@@ -8,7 +8,7 @@ class Incoming < Formula
     version "beta0.0.1"
     license "MIT"
   
-    depends_on "python@3.9"
+    depends_on "python@3.12"
     depends_on "pkg-config"
 
     resource "setuptools" do
