@@ -3,9 +3,9 @@ class Incoming < Formula
 
     desc "Our best file encoder"
     homepage "https://github.com/week-end-manufacture/incoming"
-    url "https://github.com/week-end-manufacture/incoming/archive/refs/tags/b0.0.1.tar.gz"
-    sha256 "cb2fbf71b242bd7e8da200498714301db7beb6576c07b77ac5a3ee29b6245cfe"
-    version "b0.0.1"
+    url "https://github.com/week-end-manufacture/incoming/archive/refs/tags/beta0.0.1.tar.gz"
+    sha256 "96ad7ea660e5539238f9f6d7768b065a98fde2ae8791eec6476583ec21ad9b6d"
+    version "beta0.0.1"
     license "MIT"
   
     depends_on "python@3.9"
