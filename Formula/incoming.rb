@@ -5,7 +5,7 @@ class Incoming < Formula
     homepage "https://github.com/week-end-manufacture/incoming"
     url "https://github.com/week-end-manufacture/incoming/archive/refs/tags/beta0.1.1.tar.gz"
     sha256 "11da429f779c64f8e4571e0d34682100ad971acc84683d6227524017786c2033"
-    version "beta0.1.0"
+    version "beta0.1.1"
     license "MIT"
   
     depends_on "python@3.9"
