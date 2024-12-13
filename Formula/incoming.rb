@@ -4,7 +4,7 @@ class Incoming < Formula
     desc "Our best file encoder"
     homepage "https://github.com/week-end-manufacture/incoming"
     url "https://github.com/week-end-manufacture/incoming/archive/refs/tags/0.1.5.tar.gz"
-    sha256 "be8e1736273c63b3dc7aa428b5ade4c0541f14341da93d2fd0d0a0d377bb110e"
+    sha256 "663067f7118e22987855edbc9a4b36efc655d752c0be61dcdf1a2e3e09f05b08"
     version "0.1.5"
     license "MIT"
   
