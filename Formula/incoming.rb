@@ -3,9 +3,9 @@ class Incoming < Formula
 
     desc "Our best file encoder"
     homepage "https://github.com/week-end-manufacture/incoming"
-    url "https://github.com/week-end-manufacture/incoming/archive/refs/tags/0.1.4.tar.gz"
+    url "https://github.com/week-end-manufacture/incoming/archive/refs/tags/0.1.5.tar.gz"
     sha256 "be8e1736273c63b3dc7aa428b5ade4c0541f14341da93d2fd0d0a0d377bb110e"
-    version "0.1.4"
+    version "0.1.5"
     license "MIT"
   
     depends_on "python@3.9"
@@ -107,6 +107,8 @@ class Incoming < Formula
     end
 
     def install
-        virtualenv_install_with_resources
+        venv = virtualenv_create(libexec, "python3")
+        venv.pip_install resources
+        venv.pip_install_and_link buildpath/"src"
     end
   end
