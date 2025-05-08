@@ -112,6 +112,8 @@ class Incoming < Formula
 
         resources.each do |r|
             venv.pip_install r
+        end
+        
         venv.pip_install_and_link buildpath/"src"
     end
   end
