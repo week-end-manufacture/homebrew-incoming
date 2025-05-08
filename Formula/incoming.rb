@@ -108,7 +108,7 @@ class Incoming < Formula
 
     def install
         venv = virtualenv_create(libexec, "python3")
-        venv.pip_install "pip==<latest-compatible-version>"
+        venv.pip_install "pip"
         venv.pip_install resources
         venv.pip_install_and_link buildpath/"src"
     end
