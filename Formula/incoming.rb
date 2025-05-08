@@ -8,7 +8,7 @@ class Incoming < Formula
     version "0.1.7"
     license "MIT"
   
-    depends_on "python@3.13"
+    depends_on "python@3.12"
     depends_on "pkg-config"
     depends_on "libjpeg"
     depends_on "libpng"
