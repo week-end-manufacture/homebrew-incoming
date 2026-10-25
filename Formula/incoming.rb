@@ -3,7 +3,7 @@ class Incoming < Formula
   homepage "https://github.com/week-end-manufacture/incoming"
   url "https://github.com/week-end-manufacture/incoming/archive/refs/tags/1.0.1.tar.gz"
   version "1.0.1"
-  sha256 "1d7411a1cd2f9027206b180c06d71b7cb446527a84d0725d7a0c2d0c9538c72c"
+  sha256 "ce689ef1060c3b2670204b622ec40f767079a2fc93c94627fe6af5ccdd7b1b71"
   license "MIT"
 
   depends_on "ffmpeg"
