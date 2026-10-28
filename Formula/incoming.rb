@@ -1,8 +1,8 @@
 class Incoming < Formula
   desc "File organizer and media transcoder"
   homepage "https://github.com/week-end-manufacture/incoming"
-  url "https://github.com/week-end-manufacture/incoming/archive/refs/tags/1.0.1.tar.gz"
-  version "1.0.1"
+  url "https://github.com/week-end-manufacture/incoming/archive/refs/tags/1.0.2.tar.gz"
+  version "1.0.2"
   sha256 "ce689ef1060c3b2670204b622ec40f767079a2fc93c94627fe6af5ccdd7b1b71"
   license "MIT"
 
