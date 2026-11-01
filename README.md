@@ -68,7 +68,7 @@ using a pre-built bottle:
 brew install --build-from-source week-end-manufacture/incoming/incoming
 ```
 
-The Formula downloads version `1.0.0` of `incoming`, verifies the archive
+The Formula downloads version `1.0.4` of `incoming`, verifies the archive
 against its SHA-256 checksum, builds the executable with the compiler selected
 by Homebrew, and installs it as `incoming`.
 
