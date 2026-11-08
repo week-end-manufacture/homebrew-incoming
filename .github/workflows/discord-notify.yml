@@ -1,0 +1,43 @@
+name: Discord announcement
+
+on:
+  pull_request:
+    branches:
+      - master
+    types:
+      - closed
+
+permissions:
+  contents: read
+
+jobs:
+  announce:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - name: Announce Formula update
+        env:
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          if [ -z "$DISCORD_WEBHOOK_URL" ]; then
+            echo "::error::Set the DISCORD_WEBHOOK_URL repository secret."
+            exit 1
+          fi
+
+          version="$(sed -nE 's/^[[:space:]]*version "([^"]+)".*/\1/p' Formula/incoming.rb)"
+          if [ -z "$version" ]; then
+            echo "::error::Could not read the Formula version."
+            exit 1
+          fi
+
+          payload="$(jq -n --arg version "$version" \
+            '{content: ("📦 **incoming v" + $version + "** has been updated in the Homebrew tap.\nRun `brew upgrade incoming` to upgrade.")}')"
+
+          curl --fail-with-body --silent --show-error --max-time 15 \
+            -H "Content-Type: application/json" \
+            --data "$payload" \
+            "$DISCORD_WEBHOOK_URL"

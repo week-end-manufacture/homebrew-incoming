@@ -59,6 +59,18 @@ brew update
 brew upgrade incoming
 ```
 
+### Discord update announcements
+
+When a pull request is merged into `master`, GitHub Actions announces the
+Formula version in Discord. To enable it:
+
+1. Create a webhook for the target channel in Discord's channel settings.
+2. In the GitHub repository, open **Settings → Secrets and variables → Actions**
+   and add a repository secret named `DISCORD_WEBHOOK_URL` with the webhook URL.
+
+The webhook URL is stored as a GitHub secret and must not be committed to the
+repository.
+
 ### Build the Formula from source
 
 After adding the tap, force Homebrew to build the Formula locally instead of
@@ -68,7 +80,7 @@ using a pre-built bottle:
 brew install --build-from-source week-end-manufacture/incoming/incoming
 ```
 
-The Formula downloads version `1.0.4` of `incoming`, verifies the archive
+The Formula downloads version `1.0.5` of `incoming`, verifies the archive
 against its SHA-256 checksum, builds the executable with the compiler selected
 by Homebrew, and installs it as `incoming`.
 
